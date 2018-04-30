@@ -1,0 +1,38 @@
+<?php
+  /**
+   * A simple PHP Class that returns your browser details
+   */
+  class TellMe{
+    //class properties
+
+    //accessible only within the class
+    //needs getter and setter
+    private $browserDetails;
+    //accessible by 'others'
+    public $p_browserDetails;
+    //Accessible only by 'children'
+    protected $pd_browserDetails;
+    //class behaviors
+
+      //constructor
+      //java reminder
+      //return null
+
+      function_construct()
+      {
+        TellMe::showMeTheMoney();
+        
+        //echo 'test syntax';
+      }
+      //method that returns browser details
+      //return array
+
+      public function showMeTheMoney()
+      {
+        var_dump($_SERVER);
+      }
+  }
+  //instantiation
+  $object = new TellMe();
+  echo $object;
+?>
